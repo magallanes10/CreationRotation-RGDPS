@@ -1,22 +1,22 @@
 FROM node:18-alpine AS builder
 
-WORKDIR /app
+WORKDIR /app/server
 
-COPY package*.json ./
+COPY server/package*.json ./
 RUN npm install
 
-COPY . .
+COPY server/ . .
 RUN npm run build
 
 FROM node:18-alpine
 
-WORKDIR /app
+WORKDIR /app/server
 
-COPY package*.json ./
+COPY server/package*.json ./
 RUN npm install --production
 
-COPY --from=builder /app/out ./out
+COPY --from=builder /app/server/out ./out
 
 RUN chmod -R 755 /app
 
-CMD ["node", "out/main.jsEXPOSEPOSE
+CMD ["node", "out
