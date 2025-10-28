@@ -16,10 +16,10 @@ export default function getConfig() {
     if (!fs.existsSync(configPath)) {
         const defaultConfig: Config = {
             webhookUrl: "",
-            boomlingsUrl: "https://boomlings.com",
+            boomlingsUrl: "https://rickgdps.xyz/datastore",
             botAccountID: 0,
             botAccountGJP2: "",
-            masterPassword: "PLEASE_CHANGE_THIS"
+            masterPassword: "helloworld"
         }
 
         fs.writeFileSync(configPath, JSON.stringify(defaultConfig, null, 4))
