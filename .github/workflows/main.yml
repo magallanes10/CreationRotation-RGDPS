@@ -42,7 +42,7 @@ jobs:
           combine: true
           build-config: RelWithDebInfo
           export-pdb: true
-          # sdk: nightly
+          sdk: nightly  # Add this line
           target: ${{ matrix.config.target }}
 
   package:
@@ -71,7 +71,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           draft: true
-          # replace: true
         
       - uses: actions/download-artifact@v4
         with:
