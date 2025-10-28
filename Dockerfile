@@ -4,9 +4,10 @@ WORKDIR /app/server
 
 COPY server/package*.json ./
 RUN npm install
+RUN npm install -g typescript
 
 COPY server/ . .
-RUN npm run build
+RUN tsc && npx tsc-alias
 
 FROM node:18-alpine
 
