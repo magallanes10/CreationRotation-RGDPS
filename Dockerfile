@@ -19,4 +19,4 @@ COPY --from=builder /app/server/out ./out
 
 RUN chmod -R 755 /app
 
-CMD ["node", "out
+CMD ["node", "out/main.js"]
