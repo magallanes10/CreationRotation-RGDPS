@@ -35,7 +35,7 @@
 		"server-url": {
 			"name": "Server URL",
 			"type": "string",
-			"default": "wss://creationrotation-rgdps-production.up.railway.app",
+			"default": "wss://creation-rotational-rgdps.loca.lt",
 			"description": "The Creation Rotation server URL",
 			"filter": "1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM.:/"
 		},
