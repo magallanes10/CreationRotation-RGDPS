@@ -90,7 +90,7 @@ class $modify(CRBrowserLayer, LevelBrowserLayer) {
 	void onMyButton(CCObject*) {
 		if (Mod::get()->getSettingValue<std::string>("server-url").find("prevter.me") != std::string::npos) {
 			if (!Mod::get()->setSavedValue("seen-prevter-notice", true)) {
-				Mod::get()->setSettingValue<std::string>("server-url", "wss://creationrotation-rgdps-production.up.railway.app");
+				Mod::get()->setSettingValue<std::string>("server-url", "wss//creation-rotational-rgdps.loca.lt");
 
 				FLAlertLayer::create(
 					"Creation Rotation",
